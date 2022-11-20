@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+}
+
+.tabuleiro {
+    width: 300px;
+    height: 300px;
+}
+
+.celulas {
+    display: flex;
+    background-color: white;
+}
+
+.celula:hover{
+    background-color: whitesmoke;
+}
+
+.celula {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid black;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.restart {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid black;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.restart:hover {
+    background-color: coral;
+    color: white;
+    border: 1px solid white;
+}
+
+.sobre {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid black;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sobre:hover {
+    background-color: coral;
+    color: white;
+    border: 1px solid white;
+}
+
+.voltar {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid black;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.voltar:hover {
+    background-color: coral;
+    color: white;
+    border: 1px solid white;
+}
+
+.video {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid black;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.video:hover {
+    background-color: coral;
+    color: white;
+    border: 1px solid white;
+}
+
+.alunos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
