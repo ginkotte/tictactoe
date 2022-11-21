@@ -36,6 +36,7 @@ for(let i = 0; i < celula.length; i++) {
             }
         }
         verificaVencedor();
+        verificaEmpate();
     })
 }
 
@@ -58,7 +59,6 @@ function verificaVencedor() {
             placar.jogador1++;
             atualizaPlacar();
             limpaTabuleiro();
-            return item;
         } else if(item.filter((i) => jogador2.includes(i)).length === 3) {
             alert("Jogador 2 venceu!");
             placar.jogador2++;
@@ -67,6 +67,13 @@ function verificaVencedor() {
         }
         return
     })
+}
+
+function verificaEmpate() {
+    if(jogador1.length + jogador2.length === 9){
+        alert("Empate!")
+        limpaTabuleiro();
+    }
 }
 
 function atualizaPlacar() {
@@ -88,4 +95,3 @@ function limpaTabuleiro() {
 restartBtn.addEventListener('click', () => {
     limpaTabuleiro();
 })
-
